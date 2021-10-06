@@ -1,0 +1,39 @@
+body{
+    font-family: 'Poppins-Medium';
+}
+
+.navbar-expand-lg{
+    transition:500ms ease;
+    background:transparent;
+}
+
+.navbar-expand-lg.scrolled{
+    background:#000;
+}
+
+.hero_sec_main {
+    background: url(../../Assets/hero-sec-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p.hero_s_h {
+    padding: 100px 0px 0px 0px;
+    font-size: 70px;
+    text-transform: capitalize;
+    font-family: 'Roboto-Bold';
+    line-height: 100px;
+    color: #f4f4f4;
+}
+
+.ex_btn {
+    margin-bottom: 100px;
+    background-color: transparent;
+    border: 1px solid #222;
+    transition: .3s ease;
+}
+
+.ex_btn:hover {
+    background-color: #222222;
+    color: #ffffff;
+}
