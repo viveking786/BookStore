@@ -3,12 +3,34 @@ body{
 }
 
 .navbar-expand-lg{
-    transition:500ms ease;
-    background:transparent;
+    transition: 500ms ease;
+    background: #ffffff;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0px 2px 10px 0px #ccc;
+    min-height: 60px;
 }
 
 .navbar-expand-lg.scrolled{
-    background:#000;
+    background: #fff;
+}
+
+a.navbar-brand.logo_fnt_cs {
+    font-size: 24px;
+}
+
+a.navbar-brand.logo_fnt_cs span {
+    color: #090909;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.cstm_nvbar_sec.collapse.navbar-collapse ul.navbar-nav.ml-auto li.nav-item a.nav-link {
+    color: #090909;
+    padding: 0px 15px;
+}
+
+li.nav-item.active_link a {
+    color: #007bff !important;
 }
 
 .hero_sec_main {
@@ -36,4 +58,207 @@ p.hero_s_h {
 .ex_btn:hover {
     background-color: #222222;
     color: #ffffff;
+}
+
+
+
+.gallery-title
+{
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+
+.filter_btn_sec{
+    font-family: 'Roboto-Medium';
+}
+
+.filter-button
+{
+    font-size: 14px;
+    border: 1px solid #047dff;
+    border-radius: 5px;
+    text-align: center;
+    color: #047dff;
+    transition: .23s ease;
+    padding: 5px 10px 5px 5px;
+    margin: 2px 5px 30px 0px;
+}
+
+.filter-button:hover
+{
+    font-size: 14px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #333333;
+}
+
+button.btn_filter.btn.btn-default.filter-button:focus {
+    font-size: 14px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #333333;
+}
+
+.btn-default:active .filter-button:active
+{
+    background-color: #42B32F !important;
+    color: white;
+}
+
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+
+.container.cat_sec_bks {
+    padding: 60px 0px;
+}
+
+h1.all_hd_css.text-center {
+    color: #208bff;
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+h1.all_hd_css.text-center:before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background: #292929;
+    bottom: -5px;
+    margin: auto;
+    left: -128px;
+    right: 0;
+    border-radius: 15px;
+}
+
+/* h1.gallery_title.text-center:after {
+    position: absolute;
+    height: 3px;
+    width: 88px;
+    background: 0 0;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-left: 12px solid #ff3d57;
+    border-right: 12px solid #ff3d57;
+    border-radius: 15px;
+} */
+
+.books_flt_sec.clearfix {
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    background: #ffffff;
+    padding: 8px;
+}
+
+.books_flt_sec.clearfix .book_cvr img {
+    width: 100%;
+}
+
+.book_nm_sec h3.bk_nm {
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    min-height: 44px;
+}
+
+p.bk_at_nm {
+    text-align: center;
+    font-size: 12px;
+    color: #208bff;
+    min-height: 18px;
+    font-family: 'Roboto-Medium';
+}
+
+.book_prc.text-center h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #037cff;
+    min-height: 20px;
+}
+
+.vw_cart_sec.btn-group.d-block.text-center.mx-auto {
+    min-height: 30px;
+}
+
+.vw_cart_sec.btn-group button {
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+button.btn.btn-success.qk_vw_btn {
+    margin-right: 0px;
+}
+
+button.btn.btn-warning.crt_btn {
+    margin-right: 0px;
+}
+
+.vw_cart_sec.btn-group.d-block.text-center.mx-auto button {
+    padding: 2px 15px 2px 15px;
+    border-radius: 15px;
+    color: #ffffff;
+    background: #090909;
+    border: none;
+    transition: .3s all;
+}
+
+.vw_cart_sec.btn-group.d-block.text-center.mx-auto button:hover {
+    background: #047dff;
+}
+
+p.bk_desc {
+    font-size: 12px;
+    font-family: 'Roboto-Medium';
+    color: #444;
+    line-height: 20px;
+}
+
+.modal-header {
+    background: #090909;
+    color: #ffffff;
+}
+
+h5#exampleModalLabel {
+    font-size: 18px;
+}
+
+button.close {
+    color: #ffffff;
+    text-shadow: none;
+    opacity: 1;
+}
+
+.close:hover {
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+.modal-footer.text-center {
+    background-color: #047dff;
 }
