@@ -441,3 +441,157 @@ section .section-title {
     font-size: 14px;
     color: #333333;
 }
+
+.col-lg-2.col-md-2.col-sm-12.col-xs-12.social_sec_inner a {
+    color: #ffffff;
+    font-size: 50px;
+}
+
+.col-lg-2.col-md-2.col-sm-12.col-xs-12.social_sec_inner.s_s_in_facebook {
+    background-color: #547BBC;
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+    padding: 40px 0px 40px 0px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.col-lg-2.col-md-2.col-sm-12.col-xs-12.social_sec_inner.s_s_in_twitter {
+    background-color: #79CCF0;
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+    padding: 40px 0px 40px 0px;
+}
+
+.col-lg-2.col-md-2.col-sm-12.col-xs-12.social_sec_inner.s_s_in_tiktok {
+    background-color: #FF0050;
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+    padding: 40px 0px 40px 0px;
+}
+
+.col-lg-2.col-md-2.col-sm-12.col-xs-12.social_sec_inner.s_s_in_rss {
+    background-color: #F9A32C;
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+    padding: 40px 0px 40px 0px;
+}
+
+.col-lg-2.col-md-2.col-sm-12.col-xs-12.social_sec_inner.s_s_in_linkedin {
+    background-color: #007BB6;
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+    padding: 40px 0px 40px 0px;
+}
+
+.col-lg-2.col-md-2.col-sm-12.col-xs-12.social_sec_inner.s_s_in_youtube {
+    background-color: #EE1C1B;
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+    padding: 40px 0px 40px 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.cnt_inf_foo_sec_inner {
+    color: #ffffff;
+    padding: 0px 0px 10px 0px;
+}
+
+.cnt_inf_foo_sec_inner span {
+    vertical-align: top;
+    padding-left: 10px;
+}
+
+.nav.nav-tabs.nav-fill.login_signup_tabs_sec a.nav-item.nav-link.active {
+    background-color: #007bff;
+    color: #ffffff;
+    border: 0px;
+}
+
+.nav.nav-tabs.nav-fill.login_signup_tabs_sec {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+a.nav-item.nav-link.login_signup_tabs_sec_signup {
+    border: 0px;
+}
+
+a.nav-item.nav-link.login_signup_tabs_sec_login {
+    border: 0px;
+    border-bottom: 0px;
+}
+
+section.project-tab {
+    padding: 70px 0px;
+}
+
+.container-fluid.abt_sec_bg_w {
+    background-image: url('../../Assets/about-us-bg.jpg');
+    padding: 300px 0px 300px 0px;
+}
+
+.container.abt_us_top_bg {
+    margin-top: -80px;
+    background-color: #ffffff;
+    border-radius: 1px;
+    margin-bottom: 80px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1 !important;
+}
+
+h3.h3_sec_jsj {
+    padding-top: 20px;
+    font-size: 28px;
+    color: #222222;
+    font-weight: 600;
+}
+
+h4.wht_we_do_sec {
+    padding: 10px 0px 10px 0px;
+    font-size: 22px;
+    color: #222222;
+    font-weight: 600;
+}
+
+h4.wht_we_do_sec_vision {
+    padding: 10px 0px 10px 0px;
+    font-size: 22px;
+    color: #222222;
+    font-weight: 600;
+}
+
+h4.wht_we_do_sec_mission {
+    padding: 10px 0px 10px 0px;
+    font-size: 22px;
+    color: #222222;
+    font-weight: 600;
+}
+
+p.wh_we_do_p {
+    font-size: 15px;
+    color: #333333;
+}
+
+p.wh_we_do_p_vision {
+    font-size: 15px;
+    color: #333333;
+}
+
+p.wh_we_do_p_mission {
+    font-size: 15px;
+    color: #333333;
+}
+
+.container-fluid.abt_sec_bg_w iframe {
+    width: 100%;
+}

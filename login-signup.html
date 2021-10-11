@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookStore</title>
+    <link rel="stylesheet" href="Vendor/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Src/css/style.css">
+    <link rel="stylesheet" href="Src/fonts/Poppins/poppins-fonts.css">
+    <link rel="stylesheet" href="Src/fonts/Roboto/Roboto-stylesheet.css">
+</head>
+<body>
+    
+    <!-- Top Navigation -->
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand logo_fnt_cs" href="javascript:void(0)">Book<span>Store</span></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="cstm_nvbar_sec collapse navbar-collapse" id="navb">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  Categories
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Fantasy</a>
+                  <a class="dropdown-item" href="#">Mystery</a>
+                  <a class="dropdown-item" href="#">Historical Fiction</a>
+                  <a class="dropdown-item" href="#">Horror</a>
+                  <a class="dropdown-item" href="#">Sci-Fi</a>
+                </div>
+            </li>   
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>    
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item active_link">
+              <a class="nav-link" href="login-signup.html">Login | Signup</a>
+            </li>            
+            <li class="nav-item">
+                <a class="nav-link" href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+            </li>                                             
+          </ul>
+        </div>
+        </div>
+        
+      </nav>
+
+      <section id="tabs" class="project-tab">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav>
+                        <div class="nav nav-tabs nav-fill login_signup_tabs_sec" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active login_signup_tabs_sec_signup" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">SignUp</a>
+                            <a class="nav-item nav-link login_signup_tabs_sec_login" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Login</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+
+<!-- SignUp and Login -->
+<div class="container">
+        
+    <div class="card">
+    <article class="card-body mx-auto" style="max-width: 800px;">
+        <h4 class="card-title mt-3 text-center">Create Account</h4>
+        <form>
+        <div class="form-group input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+             </div>
+            <input name="" class="form-control" placeholder="Full name" type="text">
+        </div> <!-- form-group// -->
+        <div class="form-group input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+             </div>
+            <input name="" class="form-control" placeholder="Email address" type="email">
+        </div> <!-- form-group// -->
+        <div class="form-group input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+            </div>
+            <select class="custom-select" style="max-width: 120px;">
+                <option selected="">+1</option>
+                <option value="1">+91</option>
+            </select>
+            <input name="" class="form-control" placeholder="Phone number" type="text">
+        </div> <!-- form-group// -->
+        <div class="form-group input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+            </div>
+            <input class="form-control" placeholder="Create password" type="password">
+        </div> <!-- form-group// -->
+        <div class="form-group input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+            </div>
+            <input class="form-control" placeholder="Repeat password" type="password">
+        </div> <!-- form-group// -->                                      
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block"> Create Account  </button>
+        </div> <!-- form-group// -->      
+        <!-- <p class="text-center">Have an account? <a href="">Log In</a> </p>                                                                  -->
+    </form>
+    </article>
+    </div> <!-- card.// -->
+    
+    </div> 
+    <!--container end.//-->
+
+
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="container">
+        
+                                <div class="card">
+                                <article class="card-body mx-auto" style="max-width: 400px;">
+                                    <h4 class="card-title mt-3 text-center">Login</h4>
+                                    <form>
+                                    <div class="form-group input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                                         </div>
+                                        <input name="" class="form-control" placeholder="Email address" type="email">
+                                    </div> <!-- form-group// -->
+                                    <div class="form-group input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                                        </div>
+                                        <input class="form-control" placeholder="Password" type="password">
+                                    </div> <!-- form-group// -->                                      
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary btn-block"> Login</button>
+                                    </div> <!-- form-group// -->      
+                                    <!-- <p class="text-center">Have an account? <a href="">Log In</a> </p>                                                                  -->
+                                </form>
+                                </article>
+                                </div> <!-- card.// -->
+                                
+                                </div> 
+                                <!--container end.//-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+
+
+    <!-- Newsletter Section -->
+
+    <section class="container-fluid newsletter_sec_main">
+      <div class="container news_sec_inner">
+        <div class="row">
+          <div class="col-lg-6 news_let_left">
+            <h3>Newsletter</h3>
+            <h2>Subscribe to get the latest updates</h2>
+          </div>
+          <div class="col-lg-6 news_let_right">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Enter your Email!" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Social Media Section -->
+
+<div class="container res_sec_bks">
+  <div class="row">
+    <div class="text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <h1 class="all_hd_css text-center">Follow Us</h1>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 social_sec_inner s_s_in_facebook">
+      <div class="font_aws_inn">
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 social_sec_inner s_s_in_twitter">
+      <div class="font_aws_inn">
+        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 social_sec_inner s_s_in_tiktok">
+      <div class="font_aws_inn">
+        <a href="https://www.tiktok.com/en/"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 social_sec_inner s_s_in_rss">
+      <div class="font_aws_inn">
+        <a href="https://rss.com/"><i class="fas fa-rss"></i></a>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 social_sec_inner s_s_in_linkedin">
+      <div class="font_aws_inn">
+        <a href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 social_sec_inner s_s_in_youtube">
+      <div class="font_aws_inn">
+        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Footer -->
+	<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5 style="border-left: none; padding-left: 0px; font-size: 26px;"><span style="color: #007bff;">Book</span>Store</h5>
+          <p class="foo_desc_abt" style="color: #ffffff;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit placeat sapiente vel nisi, iure quis, quae recusandae minima ipsam libero ea itaque accusamus eligendi voluptatum voluptate velit. Quibusdam, doloribus eaque.</p>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="#"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="#"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="#"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+						<li><a href="#"><i class="fa fa-angle-double-right"></i>Privacy Policy</a></li>
+						<li><a href="#"><i class="fa fa-angle-double-right"></i>Terms & Conditions</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Contact Info</h5>
+            <div class="cnt_inf_foo_sec_inner">
+              <i class="fas fa-map-pin"></i> <span>XYZ St, ON Canada</span>
+            </div>
+            <div class="cnt_inf_foo_sec_inner">
+              <i class="fas fa-envelope"></i> <span><a href="mailto:support@bookstore.com">support@bookstore.com</a></span>
+            </div>
+            <div class="cnt_inf_foo_sec_inner">
+              <i class="fas fa-phone-alt"></i> <span><a href="tel:012-345-6789">+ 012-345-6789</a></span>
+            </div>
+				</div>
+			</div>
+			<div class="row">
+				<hr>
+			</div>	
+			<div class="row" style="background: #007bff; padding: 10px; box-shadow: 1000px 0px 0px #007bff, -1000px 0px 0px #007bff;">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p class="h6">© All right Reversed.<a class="text-green ml-2" href="#" target="_blank">BookStore</a></p>
+				</div>
+				<hr>
+			</div>	
+		</div>
+	</section>
+	<!-- ./Footer -->
+
+    <!-- Loading Script at last -->
+    <script src="Vendor/Jquery/jquery.min.js"></script>
+    <script src="Vendor/FontAwesome/all.js"></script>
+    <script src="Vendor/Bootstrap/js/bootstrap.min.js"></script>
+    <script src="Vendor/Bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="Src/js/main.js"></script>
+    <script>
+    </script>
+</body>
+</html>
