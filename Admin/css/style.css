@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins-Medium', sans-serif;
+}
+
+.cstm_cnt_area_dsh {
+    padding-top: 50px !important;
+}
+
+nav.col-md-2.d-none.d-md-block.bg-light.sidebar.cstm_sdb_ara {
+    height: 100vh;
+    background-color: #007bff!important;
+    color: #ffffff !important;
+}
+
+nav.col-md-2.d-none.d-md-block.bg-light.sidebar.cstm_sdb_ara .sidebar-sticky ul.nav li.nav-item a.nav-link {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
