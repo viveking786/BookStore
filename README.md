@@ -5,4 +5,5 @@
 
 ### Customer Side
 
-![Image of Yaktocat](Homepage-3.png)
+1. Homepage
+![Image of Yaktocat](/Src/screens/Homepage-3.png)
