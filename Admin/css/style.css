@@ -18,3 +18,55 @@ nav.col-md-2.d-none.d-md-block.bg-light.sidebar.cstm_sdb_ara .sidebar-sticky ul.
     color: #ffffff;
     margin-bottom: 10px;
 }
+
+.total_pts_sec {
+    background-color: #007bff;
+    border-radius: 5px;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.total_pts_sec_green{
+    background-color: #21A659;
+    border-radius: 5px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.total_pts_sec_yellow{
+    background-color: #f1c40f;
+    border-radius: 5px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.total_pts_sec h2.to_pts_count, .total_pts_sec_green h2.to_pts_count, .total_pts_sec_yellow h2.to_pts_count {
+    padding: 20px 0px 0px 30px;
+    font-size: 40px;
+}
+
+.total_pts_sec p, .total_pts_sec_green p, .total_pts_sec_yellow p {
+    padding: 0px 0px 0px 30px;
+    font-size: 20px;
+}
+
+span.cstm_blk_icon {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+}
+
+.dsb_link_goto {
+    background-color: #272932;
+    color: #ffffff;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    padding: 8px;
+    margin-top: 30px;
+}
+
+.dsb_link_goto a{
+    color: #ffffff;
+}
