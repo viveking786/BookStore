@@ -5,4 +5,4 @@
 
 ### Customer Side
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Image of Yaktocat](Assets/Src/screens/Homepage-3.png)
