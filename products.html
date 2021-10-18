@@ -1,63 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookStore</title>
-    <link rel="stylesheet" href="Vendor/Bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Src/css/style.css">
-    <link rel="stylesheet" href="Src/fonts/Poppins/poppins-fonts.css">
-    <link rel="stylesheet" href="Src/fonts/Roboto/Roboto-stylesheet.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookStore</title>
+  <link rel="stylesheet" href="Vendor/Bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Src/css/style.css">
+  <link rel="stylesheet" href="Src/fonts/Poppins/poppins-fonts.css">
+  <link rel="stylesheet" href="Src/fonts/Roboto/Roboto-stylesheet.css">
 </head>
+
 <body>
-    
-    <!-- Top Navigation -->
 
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-          <a class="navbar-brand logo_fnt_cs" href="index.html">Book<span>Store</span></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="cstm_nvbar_sec collapse navbar-collapse" id="navb">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active_link">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                  Categories
-                </a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Fantasy</a>
-                  <a class="dropdown-item" href="#">Mystery</a>
-                  <a class="dropdown-item" href="#">Historical Fiction</a>
-                  <a class="dropdown-item" href="#">Horror</a>
-                  <a class="dropdown-item" href="#">Sci-Fi</a>
-                </div>
-            </li>   
-            <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-            </li>    
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login-signup.html">Login | Signup</a>
-            </li>            
-            <li class="nav-item">
-                <a class="nav-link" href="cart.html"><i class="fas fa-shopping-bag"></i></a>
-            </li>                                             
-          </ul>
-        </div>
-        </div>
-        
-      </nav>
+  <!-- Top Navigation -->
 
-      <!-- Hero Section -->
-      <!-- <div class="container-fluid" style="margin-top: 60px;">
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand logo_fnt_cs" href="index.html">Book<span>Store</span></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="cstm_nvbar_sec collapse navbar-collapse" id="navb">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active_link">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Categories
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item fantasy-list" href="#">Fantasy</a>
+              <a class="dropdown-item mystery-list" href="#">Mystery</a>
+              <a class="dropdown-item history-list" href="#">Historical Fiction</a>
+              <a class="dropdown-item horror-list" href="#">Horror</a>
+              <a class="dropdown-item fiction-list" href="#">Sci-Fi</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login-signup.html">Login | Signup</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+
+  <!-- Hero Section -->
+  <!-- <div class="container-fluid" style="margin-top: 60px;">
         <div class="row">
             <div class="col-lg-12 hero_sec_main">
                 <div class="container">
@@ -72,242 +74,331 @@
         </div>
       </div> -->
 
-      <!-- Books Categories Section -->
-      <div class="container cstm_div_all_sec cat_sec_bks">
-        <div class="row">
-          <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h1 class="all_hd_css text-center" style="padding-top: 50px;">Categories</h1>
+  <!-- Books Categories Section -->
+  <div class="container cstm_div_all_sec cat_sec_bks">
+    <div class="row" id="js-product-list">
+      <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h1 class="all_hd_css text-center" style="padding-top: 50px;">Categories</h1>
+      </div>
+
+      <div class="filter_btn_sec col-md-12 mx-auto text-center">
+        <!-- <button class="btn_filter btn btn-default filter-button" data-filter="all">All</button> -->
+        <button class="btn_filter btn btn-default filter-button js-product-filter" data-filter="FANTASY">Fantasy</button>
+        <button class="btn_filter btn btn-default filter-button js-product-filter" data-filter="MYSTERY">Mystery</button>
+        <button class="btn_filter btn btn-default filter-button js-product-filter" data-filter="FICTION">Historical Fiction</button>
+        <button class="btn_filter btn btn-default filter-button js-product-filter" data-filter="HORROR">Horror</button>
+        <button class="btn_filter btn btn-default filter-button js-product-filter" data-filter="SCI-FI">Sci-Fi</button>
+      </div>
+
+      <div class="js-product-item gallery_product col-lg-2 col-md-2 col-sm-4 col-xs-6 filter fantasy">
+        <div class="books_flt_sec clearfix">
+          <div class="book_cvr">
+            <img src="Assets/fantasy-1.png" alt="" class="img-responsive">
+          </div>
+          <div class="book_nm_sec">
+            <h3 class="bk_nm">The Name of the Wind</h3>
+            <p class="bk_at_nm"><span><em>by</em></span> Patrick Rothfuss</p>
+          </div>
+          <div class="book_prc text-center">
+            <h3>$15.00</h3>
+          </div>
+          <div class="vw_cart_sec btn-group d-block text-center mx-auto">
+            <button type="button" class="btn btn-success qk_vw_btn" data-toggle="modal" data-target="#exampleModal"><i
+                class="fas fa-eye"></i></button>
+            <button type="button" class="btn btn-warning crt_btn"><i class="fas fa-shopping-bag"></i></button>
           </div>
 
-          <div class="filter_btn_sec col-md-12 mx-auto text-center">
-            <!-- <button class="btn_filter btn btn-default filter-button" data-filter="all">All</button> -->
-            <button class="btn_filter btn btn-default filter-button" data-filter="fantasy">Fantasy</button>
-            <button class="btn_filter btn btn-default filter-button" data-filter="mystery">Mystery</button>
-            <button class="btn_filter btn btn-default filter-button" data-filter="historical">Historical Fiction</button>
-            <button class="btn_filter btn btn-default filter-button" data-filter="horror">Horror</button>
-            <button class="btn_filter btn btn-default filter-button" data-filter="scifi">Sci-Fi</button>
-          </div>
-
-          <div class="gallery_product col-lg-2 col-md-2 col-sm-4 col-xs-6 filter fantasy">
-            <div class="books_flt_sec clearfix">
-              <div class="book_cvr">
-                <img src="Assets/fantasy-1.png" alt="" class="img-responsive">
-              </div>
-              <div class="book_nm_sec">
-                <h3 class="bk_nm">The Name of the Wind</h3>
-                <p class="bk_at_nm"><span><em>by</em></span> Patrick Rothfuss</p>
-              </div>
-              <div class="book_prc text-center">
-                <h3>$15.00</h3>
-              </div>
-              <div class="vw_cart_sec btn-group d-block text-center mx-auto">
-                <button type="button" class="btn btn-success qk_vw_btn" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-eye"></i></button>
-                <button type="button" class="btn btn-warning crt_btn"><i class="fas fa-shopping-bag"></i></button>
-              </div>
-
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title text-center" id="exampleModalLabel">The Name of the Wind</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-center" id="exampleModalLabel">The Name of the Wind</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="book_cvr_modal text-center">
+                    <img src="Assets/fantasy-1.png" alt="" class="img-responsive">
+                    <div class="book_nm_sec">
+                      <!-- <h3 class="bk_nm">The Name of the Wind</h3> -->
+                      <p class="bk_at_nm pt-2"><span><em>by</em></span> Patrick Rothfuss</p>
+                      <p class="bk_desc">The Name of the Wind, also called The Kingkiller Chronicle: Day One, is a
+                        heroic fantasy novel written by American author Patrick Rothfuss. It is the first book in the
+                        ongoing fantasy trilogy The Kingkiller Chronicle, followed by The Wise Man's Fear. It was
+                        published on March 27, 2007, by DAW Books.</p>
                     </div>
-                    <div class="modal-body">
-                      <div class="book_cvr_modal text-center">
-                        <img src="Assets/fantasy-1.png" alt="" class="img-responsive">
-                        <div class="book_nm_sec">
-                          <!-- <h3 class="bk_nm">The Name of the Wind</h3> -->
-                          <p class="bk_at_nm pt-2"><span><em>by</em></span> Patrick Rothfuss</p>
-                          <p class="bk_desc">The Name of the Wind, also called The Kingkiller Chronicle: Day One, is a heroic fantasy novel written by American author Patrick Rothfuss. It is the first book in the ongoing fantasy trilogy The Kingkiller Chronicle, followed by The Wise Man's Fear. It was published on March 27, 2007, by DAW Books.</p>
-                        </div>
-                        <div class="book_prc text-center">
-                          <h3>$15.00</h3>
-                        </div>
-                      </div>
+                    <div class="book_prc text-center">
+                      <h3>$15.00</h3>
                     </div>
-                    <div class="modal-footer text-center">
-                      <div class="btn_md_dv mx-auto">
-                        <button type="button" class="btn btn-warning crt_btn text-center">Add to Cart <i class="fas fa-shopping-bag"></i></button>
-                      </div>
-                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer text-center">
+                  <div class="btn_md_dv mx-auto">
+                    <button type="button" class="btn btn-warning crt_btn text-center">Add to Cart <i
+                        class="fas fa-shopping-bag"></i></button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="gallery_product col-lg-2 col-md-2 col-sm-4 col-xs-6 filter fantasy">
-            <div class="books_flt_sec clearfix">
-              <div class="book_cvr">
-                <img src="Assets/fantasy-2.png" alt="" class="img-responsive">
-              </div>
-              <div class="book_nm_sec">
-                <h3 class="bk_nm">A Game of Thrones</h3>
-                <p class="bk_at_nm"><span><em>by</em></span> George R. R. Martin</p>
-              </div>
-              <div class="book_prc text-center">
-                <h3>$30.00</h3>
-              </div>
-              <div class="vw_cart_sec btn-group d-block text-center mx-auto">
-                <button type="button" class="btn btn-success qk_vw_btn"><i class="fas fa-eye"></i></button>
-                <button type="button" class="btn btn-warning crt_btn"><i class="fas fa-shopping-bag"></i></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="gallery_product col-lg-2 col-md-2 col-sm-4 col-xs-6 filter fantasy">
-            <div class="books_flt_sec clearfix">
-              <div class="book_cvr">
-                <img src="Assets/fantasy-3.png" alt="" class="img-responsive">
-              </div>
-              <div class="book_nm_sec">
-                <h3 class="bk_nm">The Lord of The Ring</h3>
-                <p class="bk_at_nm"><span><em>by</em></span> J.R.R Tolkien</p>
-              </div>
-              <div class="book_prc text-center">
-                <h3>$28.00</h3>
-              </div>
-              <div class="vw_cart_sec btn-group d-block text-center mx-auto">
-                <button type="button" class="btn btn-success qk_vw_btn"><i class="fas fa-eye"></i></button>
-                <button type="button" class="btn btn-warning crt_btn"><i class="fas fa-shopping-bag"></i></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="gallery_product col-lg-2 col-md-2 col-sm-4 col-xs-6 filter fantasy">
-            <div class="books_flt_sec clearfix">
-              <div class="book_cvr">
-                <img src="Assets/fantasy-4.png" alt="" class="img-responsive">
-              </div>
-              <div class="book_nm_sec">
-                <h3 class="bk_nm">The Eye of the World</h3>
-                <p class="bk_at_nm"><span><em>by</em></span> Robert Jordan</p>
-              </div>
-              <div class="book_prc text-center">
-                <h3>$25.00</h3>
-              </div>
-              <div class="vw_cart_sec btn-group d-block text-center mx-auto">
-                <button type="button" class="btn btn-success qk_vw_btn"><i class="fas fa-eye"></i></button>
-                <button type="button" class="btn btn-warning crt_btn"><i class="fas fa-shopping-bag"></i></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="gallery_product col-lg-2 col-md-2 col-sm-4 col-xs-6 filter fantasy">
-            <div class="books_flt_sec clearfix">
-              <div class="book_cvr">
-                <img src="Assets/fantasy-5.png" alt="" class="img-responsive">
-              </div>
-              <div class="book_nm_sec">
-                <h3 class="bk_nm">Gardens of the Moon</h3>
-                <p class="bk_at_nm"><span><em>by</em></span> Steven Erikson</p>
-              </div>
-              <div class="book_prc text-center">
-                <h3>$25.00</h3>
-              </div>
-              <div class="vw_cart_sec btn-group d-block text-center mx-auto">
-                <button type="button" class="btn btn-success qk_vw_btn"><i class="fas fa-eye"></i></button>
-                <button type="button" class="btn btn-warning crt_btn"><i class="fas fa-shopping-bag"></i></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="gallery_product col-lg-2 col-md-2 col-sm-4 col-xs-6 filter fantasy">
-            <div class="books_flt_sec clearfix">
-              <div class="book_cvr">
-                <img src="Assets/fantasy-6.png" alt="" class="img-responsive">
-              </div>
-              <div class="book_nm_sec">
-                <h3 class="bk_nm">Six of Crows</h3>
-                <p class="bk_at_nm"><span><em>by</em></span> Leigh Bardugo</p>
-              </div>
-              <div class="book_prc text-center">
-                <h3>$45.00</h3>
-              </div>
-              <div class="vw_cart_sec btn-group d-block text-center mx-auto">
-                <button type="button" class="btn btn-success qk_vw_btn"><i class="fas fa-eye"></i></button>
-                <button type="button" class="btn btn-warning crt_btn"><i class="fas fa-shopping-bag"></i></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="gallery_product col-lg-2 col-md-2 col-sm-4 col-xs-6 filter spray">
-          </div>
-
-          <div class="gallery_product col-lg-2 col-md-2 col-sm-4 col-xs-6 filter irrigation">
-          </div>
-
-          <div class="gallery_product col-lg-2 col-md-2 col-sm-4 col-xs-6 filter irrigation">
-          </div>
-
-          <div class="gallery_product col-lg-2 col-md-2 col-sm-4 col-xs-6 filter hdpe">
-          </div>
-
-          <div class="gallery_product col-lg-2 col-md-2 col-sm-4 col-xs-6 filter spray">
-          </div>
-
-          <div class="gallery_product col-lg-2 col-md-2 col-sm-4 col-xs-6 filter sprinkle">
-          </div>
-          
         </div>
-        
-        <!-- <a href="products.html" target="_blank" class="text-center all_prod_btn">All Products</a> -->
       </div>
 
-    <!-- Footer -->
-	<section id="footer">
-		<div class="container">
-			<div class="row text-center text-xs-center text-sm-left text-md-left">
-				<div class="col-xs-12 col-sm-4 col-md-4">
-					<h5 style="border-left: none; padding-left: 0px; font-size: 26px;"><span style="color: #007bff;">Book</span>Store</h5>
-          <p class="foo_desc_abt" style="color: #ffffff;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit placeat sapiente vel nisi, iure quis, quae recusandae minima ipsam libero ea itaque accusamus eligendi voluptatum voluptate velit. Quibusdam, doloribus eaque.</p>
-				</div>
-				<div class="col-xs-12 col-sm-4 col-md-4">
-					<h5>Quick links</h5>
-					<ul class="list-unstyled quick-links">
-						<li><a href="#"><i class="fa fa-angle-double-right"></i>Home</a></li>
-						<li><a href="#"><i class="fa fa-angle-double-right"></i>About</a></li>
-						<li><a href="#"><i class="fa fa-angle-double-right"></i>Contact</a></li>
-						<li><a href="#"><i class="fa fa-angle-double-right"></i>Privacy Policy</a></li>
-						<li><a href="#"><i class="fa fa-angle-double-right"></i>Terms & Conditions</a></li>
-					</ul>
-				</div>
-				<div class="col-xs-12 col-sm-4 col-md-4">
-					<h5>Contact Info</h5>
-            <div class="cnt_inf_foo_sec_inner">
-              <i class="fas fa-map-pin"></i> <span>XYZ St, ON Canada</span>
-            </div>
-            <div class="cnt_inf_foo_sec_inner">
-              <i class="fas fa-envelope"></i> <span><a href="mailto:support@bookstore.com">support@bookstore.com</a></span>
-            </div>
-            <div class="cnt_inf_foo_sec_inner">
-              <i class="fas fa-phone-alt"></i> <span><a href="tel:012-345-6789">+ 012-345-6789</a></span>
-            </div>
-				</div>
-			</div>
-			<div class="row">
-				<hr>
-			</div>	
-			<div class="row" style="background: #007bff; padding: 10px; box-shadow: 1000px 0px 0px #007bff, -1000px 0px 0px #007bff;">
-				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-					<p class="h6">© All right Reversed.<a class="text-green ml-2" href="#" target="_blank">BookStore</a></p>
-				</div>
-				<hr>
-			</div>	
-		</div>
-	</section>
-	<!-- ./Footer -->
+      <div class="js-product-item gallery_product col-lg-2 col-md-2 col-sm-4 col-xs-6 filter fantasy">
+        <div class="books_flt_sec clearfix">
+          <div class="book_cvr">
+            <img src="Assets/fantasy-2.png" alt="" class="img-responsive">
+          </div>
+          <div class="book_nm_sec">
+            <h3 class="bk_nm">A Game of Thrones</h3>
+            <p class="bk_at_nm"><span><em>by</em></span> George R. R. Martin</p>
+          </div>
+          <div class="book_prc text-center">
+            <h3>$30.00</h3>
+          </div>
+          <div class="vw_cart_sec btn-group d-block text-center mx-auto">
+            <button type="button" class="btn btn-success qk_vw_btn"><i class="fas fa-eye"></i></button>
+            <button type="button" class="btn btn-warning crt_btn"><i class="fas fa-shopping-bag"></i></button>
+          </div>
+        </div>
+      </div>
 
-    <!-- Loading Script at last -->
-    <script src="Vendor/Jquery/jquery.min.js"></script>
-    <script src="Vendor/FontAwesome/all.js"></script>
-    <script src="Vendor/Bootstrap/js/bootstrap.min.js"></script>
-    <script src="Vendor/Bootstrap/js/bootstrap.bundle.js"></script>
-    <script src="Src/js/main.js"></script>
-    <script>
-    </script>
+      <div class="js-product-item gallery_product col-lg-2 col-md-2 col-sm-4 col-xs-6 filter fantasy">
+        <div class="books_flt_sec clearfix">
+          <div class="book_cvr">
+            <img src="Assets/fantasy-3.png" alt="" class="img-responsive">
+          </div>
+          <div class="book_nm_sec">
+            <h3 class="bk_nm">The Lord of The Ring</h3>
+            <p class="bk_at_nm"><span><em>by</em></span> J.R.R Tolkien</p>
+          </div>
+          <div class="book_prc text-center">
+            <h3>$28.00</h3>
+          </div>
+          <div class="vw_cart_sec btn-group d-block text-center mx-auto">
+            <button type="button" class="btn btn-success qk_vw_btn"><i class="fas fa-eye"></i></button>
+            <button type="button" class="btn btn-warning crt_btn"><i class="fas fa-shopping-bag"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="js-product-item gallery_product col-lg-2 col-md-2 col-sm-4 col-xs-6 filter fantasy">
+        <div class="books_flt_sec clearfix">
+          <div class="book_cvr">
+            <img src="Assets/fantasy-4.png" alt="" class="img-responsive">
+          </div>
+          <div class="book_nm_sec">
+            <h3 class="bk_nm">The Eye of the World</h3>
+            <p class="bk_at_nm"><span><em>by</em></span> Robert Jordan</p>
+          </div>
+          <div class="book_prc text-center">
+            <h3>$25.00</h3>
+          </div>
+          <div class="vw_cart_sec btn-group d-block text-center mx-auto">
+            <button type="button" class="btn btn-success qk_vw_btn"><i class="fas fa-eye"></i></button>
+            <button type="button" class="btn btn-warning crt_btn"><i class="fas fa-shopping-bag"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="js-product-item gallery_product col-lg-2 col-md-2 col-sm-4 col-xs-6 filter fantasy">
+        <div class="books_flt_sec clearfix">
+          <div class="book_cvr">
+            <img src="Assets/fantasy-5.png" alt="" class="img-responsive">
+          </div>
+          <div class="book_nm_sec">
+            <h3 class="bk_nm">Gardens of the Moon</h3>
+            <p class="bk_at_nm"><span><em>by</em></span> Steven Erikson</p>
+          </div>
+          <div class="book_prc text-center">
+            <h3>$25.00</h3>
+          </div>
+          <div class="vw_cart_sec btn-group d-block text-center mx-auto">
+            <button type="button" class="btn btn-success qk_vw_btn"><i class="fas fa-eye"></i></button>
+            <button type="button" class="btn btn-warning crt_btn"><i class="fas fa-shopping-bag"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="js-product-item gallery_product col-lg-2 col-md-2 col-sm-4 col-xs-6 filter fantasy">
+        <div class="books_flt_sec clearfix">
+          <div class="book_cvr">
+            <img src="Assets/fantasy-6.png" alt="" class="img-responsive">
+          </div>
+          <div class="book_nm_sec">
+            <h3 class="bk_nm">Six of Crows</h3>
+            <p class="bk_at_nm"><span><em>by</em></span> Leigh Bardugo</p>
+          </div>
+          <div class="book_prc text-center">
+            <h3>$45.00</h3>
+          </div>
+          <div class="vw_cart_sec btn-group d-block text-center mx-auto">
+            <button type="button" class="btn btn-success qk_vw_btn"><i class="fas fa-eye"></i></button>
+            <button type="button" class="btn btn-warning crt_btn"><i class="fas fa-shopping-bag"></i></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- <a href="products.html" target="_blank" class="text-center all_prod_btn">All Products</a> -->
+  </div>
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="container">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5 style="border-left: none; padding-left: 0px; font-size: 26px;"><span
+              style="color: #007bff;">Book</span>Store</h5>
+          <p class="foo_desc_abt" style="color: #ffffff;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Suscipit placeat sapiente vel nisi, iure quis, quae recusandae minima ipsam libero ea itaque accusamus
+            eligendi voluptatum voluptate velit. Quibusdam, doloribus eaque.</p>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Quick links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="#"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="#"><i class="fa fa-angle-double-right"></i>About</a></li>
+            <li><a href="#"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+            <li><a href="#"><i class="fa fa-angle-double-right"></i>Privacy Policy</a></li>
+            <li><a href="#"><i class="fa fa-angle-double-right"></i>Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Contact Info</h5>
+          <div class="cnt_inf_foo_sec_inner">
+            <i class="fas fa-map-pin"></i> <span>XYZ St, ON Canada</span>
+          </div>
+          <div class="cnt_inf_foo_sec_inner">
+            <i class="fas fa-envelope"></i> <span><a
+                href="mailto:support@bookstore.com">support@bookstore.com</a></span>
+          </div>
+          <div class="cnt_inf_foo_sec_inner">
+            <i class="fas fa-phone-alt"></i> <span><a href="tel:012-345-6789">+ 012-345-6789</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <hr>
+      </div>
+      <div class="row"
+        style="background: #007bff; padding: 10px; box-shadow: 1000px 0px 0px #007bff, -1000px 0px 0px #007bff;">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+          <p class="h6">© All right Reversed.<a class="text-green ml-2" href="#" target="_blank">BookStore</a></p>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </section>
+  <!-- ./Footer -->
+
+  <div id="clone" style="display: none;">
+    <div class="js-product-item gallery_product col-lg-2 col-md-2 col-sm-4 col-xs-6 filter fantasy">
+      <div class="books_flt_sec clearfix">
+        <div class="book_cvr">
+          <img src="Assets/fantasy-6.png" alt="" class="img-responsive js-book-image">
+        </div>
+        <div class="book_nm_sec">
+          <h3 class="bk_nm js-book-name">Six of Crows</h3>
+          <p class="bk_at_nm"><span><em>by</em></span> <span class="js-book-author">Leigh Bardugo</span></p>
+        </div>
+        <div class="book_prc text-center">
+          <h3 class="js-book-price">$45.00</h3>
+        </div>
+        <div class="vw_cart_sec btn-group d-block text-center mx-auto">
+          <button type="button" class="btn btn-success qk_vw_btn"><i class="fas fa-eye"></i></button>
+          <button type="button" class="btn btn-warning crt_btn"><i class="fas fa-shopping-bag"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Loading Script at last -->
+  <script src="Vendor/Jquery/jquery.min.js"></script>
+  <script src="Vendor/FontAwesome/all.js"></script>
+  <script src="Vendor/Bootstrap/js/bootstrap.min.js"></script>
+  <script src="Vendor/Bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="Src/js/main.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      var value = localStorage["value"];
+      if (value == "fantasy-list") {
+        loadProducts("FANTASY");
+      } if (value == "mystery-list") {
+        loadProducts("MYSTERY");
+      } if (value == "fiction-list") {
+        loadProducts("SCI-FI");
+      } if (value == "history-list") {
+        loadProducts("FICTION");
+      } if (value == "horror-list") {
+        loadProducts("HORROR");
+      } else {
+        loadProducts();
+      }
+      
+    });
+
+    $('.js-product-filter').on('click', function () {
+      let filter = $(this).attr('data-filter');
+      loadProducts(filter);
+    });
+
+    $('.fantasy-list').on('click', function () {
+      loadProducts("FANTASY");
+    });
+
+    $('.mystery-list').on('click', function () {
+      loadProducts("MYSTERY");
+    });
+
+    $('.fiction-list').on('click', function () {
+      loadProducts("SCI-FI");
+    });
+
+    $('.history-list').on('click', function () {
+      loadProducts("FICTION");
+    });
+
+    $('.horror-list').on('click', function () {
+      loadProducts("HORROR");
+    });
+
+
+    function loadProducts(type = null) {
+
+      $.ajax({
+        // url: "Src/js/products.json",
+        url: "https://api.npoint.io/6933ff600471f046d5af",
+        dataType: 'JSON',
+        success: function (result) {
+          let clone_elemenet = $('#clone .js-product-item');
+          $('#js-product-list .js-product-item').remove();
+          let i = 0;
+          $.each(result.products, function (key, value) {
+
+            if (type == value.category || type == null) {
+              let new_element = clone_elemenet.clone();
+              new_element
+                .find('.js-book-image').attr('src', 'Assets/' + value.image).end()
+                .find('.js-book-name').text(value.book_name).end()
+                .find('.js-book-author').text(value.author).end()
+                .find('.js-book-price').text(value.price).end()
+
+              $('#js-product-list').append(new_element);
+              i++;
+            }
+          });
+
+        }
+      });
+    }
+  </script>
+
 </body>
+
 </html>

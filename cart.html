@@ -31,11 +31,11 @@
                   Categories
                 </a>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Fantasy</a>
-                  <a class="dropdown-item" href="#">Mystery</a>
-                  <a class="dropdown-item" href="#">Historical Fiction</a>
-                  <a class="dropdown-item" href="#">Horror</a>
-                  <a class="dropdown-item" href="#">Sci-Fi</a>
+                  <a class="dropdown-item fantasy-list" href="products.html">Fantasy</a>
+                  <a class="dropdown-item mystery-list" href="products.html">Mystery</a>
+                  <a class="dropdown-item history-list" href="products.html">Historical Fiction</a>
+                  <a class="dropdown-item horror-list" href="products.html">Horror</a>
+                  <a class="dropdown-item fiction-list" href="products.html">Sci-Fi</a>
                 </div>
             </li>   
             <li class="nav-item">
@@ -118,6 +118,27 @@
     <script src="Vendor/Bootstrap/js/bootstrap.bundle.js"></script>
     <script src="Src/js/main.js"></script>
     <script>
+      $('.fantasy-list').on('click', function () {
+      localStorage["value"] = "fantasy-list";
+    });
+
+    $('.mystery-list').on('click', function () {
+      localStorage["value"] = "mystery-list";
+    });
+
+    $('.fiction-list').on('click', function () {
+      localStorage["value"] = "fiction-list";
+    });
+
+    $('.history-list').on('click', function () {
+      localStorage["value"] = "history-list";
+    });
+
+    $('.horror-list').on('click', function () {
+      localStorage["value"] = "horror-list";
+    });
+
+
     </script>
 </body>
 </html>

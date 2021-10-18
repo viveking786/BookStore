@@ -107,11 +107,11 @@ p.hero_s_h {
 
 button.btn_filter.btn.btn-default.filter-button:focus {
     font-size: 14px;
-    border: 1px solid #333333;
+    border: 1px solid #333333 !important;
     border-radius: 5px;
     text-align: center;
     color: #ffffff;
-    background-color: #333333;
+    background-color: #333333 !important;
 }
 
 .btn-default:active .filter-button:active

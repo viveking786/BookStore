@@ -1,0 +1,108 @@
+{
+   "users": [{
+         "username": "elmy@wac.com",
+         "password": "123"
+      },
+      {
+         "username": "nishal@wac.com",
+         "password": "123"
+      }
+   ],
+   "products": [{
+         "book_name": "The Name of the Wind",
+         "category": "FANTASY",
+         "author": "Patrick Rothfuss",
+         "image": "fantasy-1.png",
+         "price": "15",
+         "description": "The Name of the Wind, also called The Kingkiller Chronicle: Day One, is a heroic fantasy novel written by American author Patrick Rothfuss. It is the first book in the ongoing fantasy trilogy The Kingkiller Chronicle, followed by The Wise Man's Fear. It was published on March 27, 2007, by DAW Books."
+      },
+      {
+         "book_name": "A Game of Thrones",
+         "category": "FANTASY",
+         "author": "George R. R. Martin",
+         "image": "fantasy-2.png",
+         "price": "30",
+         "description": "Game of Thrones, also called The Kingkiller Chronicle: Day One, is a heroic fantasy novel written by American author Patrick Rothfuss. It is the first book in the ongoing fantasy trilogy The Kingkiller Chronicle, followed by The Wise Man's Fear. It was published on March 27, 2007, by DAW Books."
+      },
+      {
+         "book_name": "A Game of Thrones",
+         "category": "MYSTERY",
+         "author": "George R. R. Martin",
+         "image": "fantasy-2.png",
+         "price": "30",
+         "description": "Game of Thrones, also called The Kingkiller Chronicle: Day One, is a heroic fantasy novel written by American author Patrick Rothfuss. It is the first book in the ongoing fantasy trilogy The Kingkiller Chronicle, followed by The Wise Man's Fear. It was published on March 27, 2007, by DAW Books."
+      },
+      {
+         "book_name": "The Lord of The Ring",
+         "category": "FANTASY",
+         "author": "J.R.R Tolkien",
+         "image": "fantasy-3.png",
+         "price": "28",
+         "description": "The Lord of The Ring, also called The Kingkiller Chronicle: Day One, is a heroic fantasy novel written by American author Patrick Rothfuss. It is the first book in the ongoing fantasy trilogy The Kingkiller Chronicle, followed by The Wise Man's Fear. It was published on March 27, 2007, by DAW Books."
+      },
+      {
+         "book_name": "The Lord of The Ring",
+         "category": "FICTION",
+         "author": "J.R.R Tolkien",
+         "image": "fantasy-3.png",
+         "price": "28",
+         "description": "The Lord of The Ring, also called The Kingkiller Chronicle: Day One, is a heroic fantasy novel written by American author Patrick Rothfuss. It is the first book in the ongoing fantasy trilogy The Kingkiller Chronicle, followed by The Wise Man's Fear. It was published on March 27, 2007, by DAW Books."
+      },
+      {
+         "book_name": "The Eye of the World",
+         "category": "HORROR",
+         "author": "Robert Jordan",
+         "image": "fantasy-4.png",
+         "price": "25",
+         "description": "The Eye of the World, also called The Kingkiller Chronicle: Day One, is a heroic fantasy novel written by American author Patrick Rothfuss. It is the first book in the ongoing fantasy trilogy The Kingkiller Chronicle, followed by The Wise Man's Fear. It was published on March 27, 2007, by DAW Books."
+      },
+      {
+         "book_name": "The Eye of the World",
+         "category": "FANTASY",
+         "author": "Robert Jordan",
+         "image": "fantasy-4.png",
+         "price": "25",
+         "description": "The Eye of the World, also called The Kingkiller Chronicle: Day One, is a heroic fantasy novel written by American author Patrick Rothfuss. It is the first book in the ongoing fantasy trilogy The Kingkiller Chronicle, followed by The Wise Man's Fear. It was published on March 27, 2007, by DAW Books."
+      },
+      {
+         "book_name": "Gardens of the Moon",
+         "category": "SCI-FI",
+         "author": "Steven Erikson",
+         "image": "fantasy-5.png",
+         "price": "25",
+         "description": "Gardens of the Moon, also called The Kingkiller Chronicle: Day One, is a heroic fantasy novel written by American author Patrick Rothfuss. It is the first book in the ongoing fantasy trilogy The Kingkiller Chronicle, followed by The Wise Man's Fear. It was published on March 27, 2007, by DAW Books."
+      },
+      {
+         "book_name": "Gardens of the Moon",
+         "category": "FANTASY",
+         "author": "Steven Erikson",
+         "image": "fantasy-5.png",
+         "price": "25",
+         "description": "Gardens of the Moon, also called The Kingkiller Chronicle: Day One, is a heroic fantasy novel written by American author Patrick Rothfuss. It is the first book in the ongoing fantasy trilogy The Kingkiller Chronicle, followed by The Wise Man's Fear. It was published on March 27, 2007, by DAW Books."
+      },
+      {
+         "book_name": "Six of Crows",
+         "category": "FANTASY",
+         "author": "Leigh Bardugo",
+         "image": "fantasy-6.png",
+         "price": "45",
+         "description": "Six of Crows, also called The Kingkiller Chronicle: Day One, is a heroic fantasy novel written by American author Patrick Rothfuss. It is the first book in the ongoing fantasy trilogy The Kingkiller Chronicle, followed by The Wise Man's Fear. It was published on March 27, 2007, by DAW Books."
+      },
+      {
+         "book_name": "Six of Crows 1",
+         "category": "SCI-FI",
+         "author": "Leigh Bardugo",
+         "image": "fantasy-6.png",
+         "price": "45",
+         "description": "Six of Crows, also called The Kingkiller Chronicle: Day One, is a heroic fantasy novel written by American author Patrick Rothfuss. It is the first book in the ongoing fantasy trilogy The Kingkiller Chronicle, followed by The Wise Man's Fear. It was published on March 27, 2007, by DAW Books."
+      },
+      {
+         "book_name": "Six of Crows 2",
+         "category": "HORROR",
+         "author": "Leigh Bardugo",
+         "image": "fantasy-6.png",
+         "price": "45",
+         "description": "Six of Crows, also called The Kingkiller Chronicle: Day One, is a heroic fantasy novel written by American author Patrick Rothfuss. It is the first book in the ongoing fantasy trilogy The Kingkiller Chronicle, followed by The Wise Man's Fear. It was published on March 27, 2007, by DAW Books."
+      }
+   ]
+}
