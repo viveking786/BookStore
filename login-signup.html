@@ -80,18 +80,18 @@
                 <div class="card">
                   <article class="card-body mx-auto" style="max-width: 800px;">
                     <h4 class="card-title mt-3 text-center">Create Account</h4>
-                    <form>
+                    <form id="signup-form">
                       <div class="form-group input-group">
                         <div class="input-group-prepend">
                           <span class="input-group-text"> <i class="fa fa-user"></i> </span>
                         </div>
-                        <input name="" class="form-control" placeholder="Full name" type="text">
+                        <input name="" class="form-control" placeholder="Full name" type="text" id="name1">
                       </div>
                       <div class="form-group input-group">
                         <div class="input-group-prepend">
                           <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
                         </div>
-                        <input name="" class="form-control" placeholder="Email address" type="email">
+                        <input name="" class="form-control" placeholder="Email address" type="email" id="email1">
                       </div>
                       <!-- <div class="form-group input-group">
                         <div class="input-group-prepend">
@@ -113,10 +113,11 @@
                         <div class="input-group-prepend">
                           <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                         </div>
-                        <input class="form-control" placeholder="Repeat password" type="password">
+                        <input class="form-control" placeholder="Password" type="password" id="password1">
                       </div> <!-- form-group// -->
                       <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-block"> Create Account </button>
+                        <!-- <a href="" class="btn btn-primary btn-block" onclick="store()">Create Account</a> -->
+                        <input type="submit" value="Signup" id="signup_btn" class="btn btn-primary btn-block">
                       </div> <!-- form-group// -->
                       <!-- <p class="text-center">Have an account? <a href="">Log In</a> </p>                                                                  -->
                     </form>
@@ -134,21 +135,23 @@
                 <div class="card">
                   <article class="card-body mx-auto" style="max-width: 400px;">
                     <h4 class="card-title mt-3 text-center">Login</h4>
-                    <form>
+                    <form id="login-form">
                       <div class="form-group input-group">
                         <div class="input-group-prepend">
                           <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
                         </div>
-                        <input name="" class="form-control" placeholder="Email address" type="email">
+                        <input name="" class="form-control" placeholder="Email address" type="email" id="email2">
                       </div> <!-- form-group// -->
                       <div class="form-group input-group">
                         <div class="input-group-prepend">
                           <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                         </div>
-                        <input class="form-control" placeholder="Password" type="password">
+                        <input class="form-control" placeholder="Password" type="password" id="password2">
                       </div> <!-- form-group// -->
                       <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-block"> Login</button>
+                        <!-- <button type="submit" class="btn btn-primary btn-block" onclick="check()"> Login</button> -->
+                        <!-- <a href="" class="btn btn-primary btn-block" onclick="check()">Login</a> -->
+                        <input type="submit" value="Login" id="login_btn" class="btn btn-primary btn-block">
                       </div> <!-- form-group// -->
                       <!-- <p class="text-center">Have an account? <a href="">Log In</a> </p>                                                                  -->
                     </form>
@@ -309,6 +312,34 @@
     });
 
 
+    //signup and login functions
+
+    $(document).ready(function (){
+      $("#signup-form").submit(function(){
+          var nm1 = $("#name1").val();
+          var em1 = $("#email1").val();
+          var pw1 = $("#password1").val();
+
+          localStorage.setItem("n1", nm1);
+          localStorage.setItem("e1", em1);
+          localStorage.setItem("p1", pw1);
+      });
+
+      $("#login-form").submit(function(){
+        var enteredEmail = $("#email2").val();
+        var enteredPassword = $("#password2").val();
+
+        var storedEmail = localStorage.getItem("e1");
+        var storedPassword = localStorage.getItem("p1");
+
+        if(enteredEmail == storedEmail && enteredPassword == storedPassword){
+          alert("You are logged In!");
+        }
+        else{
+          alert("Email and Password is incorrect!");
+        }
+      });
+    });
   </script>
 </body>
 
